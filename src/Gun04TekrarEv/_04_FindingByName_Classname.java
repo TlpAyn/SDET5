@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _04_FindingByName {
+public class _04_FindingByName_Classname {
     public static void main(String[] args) {
 
         WebDriver driver = new ChromeDriver();
@@ -16,6 +16,7 @@ public class _04_FindingByName {
         ad.sendKeys("arraraa");
 
         WebElement ad1 = driver.findElement(By.className("form-textbox"));
+
         ad1.sendKeys("kedonu");
 
         MyFunc.Bekle(2);
